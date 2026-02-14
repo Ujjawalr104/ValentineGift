@@ -56,14 +56,25 @@ const galleryRef = useRef(null);
   
 
   return (
-    <section ref={galleryRef} className="min-h-screen flex flex-col justify-center bg-[#F8F0FB] text-center py-16 px-6
+    <section ref={galleryRef} className="min-h-screen flex flex-col justify-center bg-[#F8F0FB] text-centerpy-10 sm:py-14 md:py-16 px-3 sm:px-6
     bg-[radial-gradient(circle_at_top_left,_#ffffff60,_transparent_40%),radial-gradient(circle_at_bottom_right,_#e9d5ff60,_transparent_40%)]">
     
-      <h2 className="text-5xl font-bold text-purple-900 mb-12 mt-4
+      <h2 className="text-3xl sm:text-4xl md:text-5xl
+ font-bold text-purple-900 mb-12 mt-4
 ">
         Our Memories 💜
       </h2>
-      <div className="flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12 px-8 py-6 max-w-6xl mx-auto">
+      <div className="
+  grid 
+  grid-cols-2 
+  sm:grid-cols-2 
+  md:grid-cols-3 
+  lg:grid-cols-4
+  gap-4 sm:gap-6 md:gap-8
+  px-2 sm:px-4 md:px-8
+  py-4 sm:py-6
+  max-w-6xl mx-auto
+">
 
 
         {images.map((item, index) => (
@@ -75,14 +86,16 @@ const galleryRef = useRef(null);
         viewport={{ once: false}}
         whileHover={{ scale: 1.05, rotate: 0 }}
       
-            className="bg-white p-4 rounded-xl shadow-md shadow-purple-200/60 w-[240px] m-2
+            className="bg-white p-4 rounded-xl shadow-md shadow-purple-200/60 w-full max-w-[220px] sm:max-w-[240px]
+            m-2
             rotate-[-2deg]
             hover:shadow-2xl hover:shadow-pink-300/70 hover:scale-105
             transition-all duration-300"
             
           >
             {/* Image */}
-            <div className="flip-card h-[200px]">
+            <div className="flip-card h-[150px] sm:h-[180px] md:h-[200px] overflow-hidden ">
+              
               <div className="flip-inner">
                 {/* Front (Image) */}
                 <div className="flip-front overflow-hidden">
