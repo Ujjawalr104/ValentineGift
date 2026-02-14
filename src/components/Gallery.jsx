@@ -1,23 +1,35 @@
 import { motion } from "framer-motion";
 import { useState, useEffect, useRef } from "react";
 import ValentineSection from "./ValentineSection";
-
+import her1 from "../assets/her1.jpg";
+import her2 from "../assets/her2.jpg";
+import her3 from "../assets/her3.jpg";
+import her4 from "../assets/her4.jpg";
+import her6 from "../assets/her6.jpg";
+import her7 from "../assets/her7.jpg";
+import her8 from "../assets/her8.jpg";
+import her9 from "../assets/her9.jpg";
+import her10 from "../assets/her10.jpg";
+import her11 from "../assets/her11.jpg";
+import her12 from "../assets/her12.jpg";
+import her13 from "../assets/her13.jpg";
 
 
 const images = [
-  { src: "src/assets/her13.jpg", caption: "loving moments 💕" },
-  { src: "src/assets/her2.jpg", caption: "Your Cute Smile 😍" },
-  { src: "src/assets/her3.jpg", caption: "Meri Hot Hot Madam ji 🫣" },
-  { src: "src/assets/her4.jpg", caption: "Crazy Moments 😂" },
-  { src: "src/assets/her11.jpg", caption: "Forever Us 💜" },
-  { src: "src/assets/her6.jpg", caption: "Sweetest Hug 🤗" },
-  { src: "src/assets/her7.jpg", caption: "My Happiness 💖" },
-  { src: "src/assets/her8.jpg", caption: "You & Me 💑" },
-  { src: "src/assets/her9.jpg", caption: "Mera Bacha 😘 " },
-  { src: "src/assets/her12.jpg", caption: "My Sweetest Memory 🥰" },
-  { src: "src/assets/her10.jpg", caption: "My Pyaari Ghadi😁" },
-  { src: "src/assets/her1.jpg", caption: "My Whole World 🌍" },
+  { src: her13, caption: "loving moments 💕" },
+  { src: her2, caption: "Your Cute Smile 😍" },
+  { src: her3, caption: "Meri Hot Hot Madam ji 🫣" },
+  { src: her4, caption: "Crazy Moments 😂" },
+  { src: her11, caption: "Forever Us 💜" },
+  { src: her6, caption: "Sweetest Hug 🤗" },
+  { src: her7, caption: "My Happiness 💖" },
+  { src: her8, caption: "You & Me 💑" },
+  { src: her9, caption: "Mera Bacha 😘 " },
+  { src: her12, caption: "My Sweetest Memory 🥰" },
+  { src: her10, caption: "My Pyaari Ghadi😁" },
+  { src: her1, caption: "My Whole World 🌍" },
 ];
+
 
 const Gallery = () => {
   const [showValentine, setShowValentine] = useState(false);
