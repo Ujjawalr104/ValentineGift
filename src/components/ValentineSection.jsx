@@ -78,7 +78,7 @@ const ValentineSection = () => {
       onClick={() => {
         console.log("YES CLICKED");
         setShowLetter(true);
-        setBurst(true);
+        setBurst(false);
         setTimeout(() => setBurst(false), 2000);
       }}
       className="px-8 py-3 bg-gradient-to-r from-pink-500 to-purple-600 text-white font-semibold rounded-full shadow-lg"
